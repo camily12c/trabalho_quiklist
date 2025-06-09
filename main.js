@@ -26,11 +26,11 @@ function showItensList() {
 
        <div class="item">
         <div>
-            <input type="checkbox" name="list" id="item-${index}">
-            <div class="custon-checkbox">
+            <input type="checkbox" name="list" id="item-${index}"${item.checked && "checked"}>
+            <div class="custon-checkbox"onclick="checkItem('${item.name}')">
                 <img src="./assets/checked.svg" alt="checked">
             </div>
-            <label for="item-${index}">${item.name}</label>
+            <label for="item-${index}"onclick="checkItem('${item.name}')">${item.name}</label>
         </div>
 
         <button onclick="removeItem('${item.name}')">
@@ -61,3 +61,9 @@ function showItensList() {
 function addHideWarningClass() {
   document.querySelector(".warning").classList.add("hide-warning")
 }
+
+function checkItem(itemName) {
+      const item = items.find((item) => item.name === item.name)
+     item.checked = !item.checked
+     showItemsList()
+    }
