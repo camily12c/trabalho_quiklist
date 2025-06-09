@@ -185,11 +185,29 @@ main {
         transform: translateY(0);
         opacity: .4s ease tranform .4s ease;
 
+        div{
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+
+        }
+
+        i {
+            font-size: 2rem;
+        }
+
+        button{
+            border: none;
+            background: none;
+            color: var(--always-white);
+            cursor: pointer;
+        }
+
     }
 
     .hide-warning{
         opacity: 0;
-        ransform: translateY(-10px);
+        transform: translateY(-10px);
 
     }
             
