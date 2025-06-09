@@ -40,6 +40,8 @@ function showItensList() {
       
       `
     })
+
+    localStorage.setItem("items", JSON.stringify(items))
   }
 
   function removeItem (itemName) {
@@ -67,3 +69,13 @@ function checkItem(itemName) {
      item.checked = !item.checked
      showItemsList()
     }
+
+    function verifyLocalStorageItems() {
+    const localStorageItems = localStorage.getItem("items")
+    if (localStorageItems) {
+       itens = JSON.parse(localStorageItems)
+       showItemsList()
+
+    }     
+}
+     verifyLocalStorageItems() 
