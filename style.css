@@ -184,6 +184,12 @@ main {
         opacity: 1;
         transform: translateY(0);
         opacity: .4s ease tranform .4s ease;
-        
+
+    }
+
+    .hide-warning{
+        opacity: 0;
+        ransform: translateY(-10px);
+
     }
             
