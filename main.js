@@ -58,3 +58,6 @@ function showItensList() {
   }
 }
   
+function addHideWarningClass() {
+  document.querySelector(".warning").classList.add("hide-warning")
+}
