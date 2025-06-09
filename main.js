@@ -3,6 +3,11 @@ const itens = []
 function addItem () {
   const itemName = document.querySelector("#item").value
 
+  if(itemName === "") {
+            alert("Digite um item válido!")
+            return
+        }
+
   console.log(itemName)
 
   const item = {
@@ -22,7 +27,7 @@ function showItensList() {
     sectionList.textContent = ""
 
     items.sort((itemA, itemB) => Number(itemA.checked) - Number(itemB.checked))
-    
+
     itens.map((item, index) => {
       sectionList.innerHTML += `
 
