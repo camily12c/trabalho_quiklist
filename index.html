@@ -1,54 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
-      <script src="./main.js" defer></script>
-    <title> Camily Sousa 02TB</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <title>Compras da semana</title>
 </head>
 <body>
   <header>
-    <img src="./assets/logo.png" alt="logo quick list">
+    <img src="./assets/logo.png" alt="logo quick list" />
     <button>
-        <i class="ph ph-arrow-left"></i>
-        Voltar
+      <i class="ph ph-arrow-left"></i>
+      Voltar
     </button>
     <h1>Compras da semana</h1>
-  </header>  
+  </header>
+
   <main>
-    <section class="add-icon">
-        <input type="text" placeholder="Adcione um novo item" id="item">
-        <button onclick="addItem()">Adcionar item</button>
-    </section>
-    
-    <section class="list">
-   
+    <section class="add-item">
+      <input type="text" placeholder="Adcione um novo item" id="item" />
+      <button onclick="addItem()">Adicionar item</button>
     </section>
 
-    <div class="warning">
+    <section class="list"></section>
+
     <div class="warning hide-warning">
-
-    <i class="ph ph-warning-circle ph-fill"></i>
-    <span>O item foi removido da lista</span>
-    <div>
+      <i class="ph ph-warning-circle ph-fill"></i>
+      <span>O item foi removido da lista</span>
+      <div>
         <button onclick="addHideWarningClass()">
-            <i class="ph ph-x"></i>
+          <i class="ph ph-x"></i>
         </button>
+      </div>
     </div>
   </main>
 </body>
 </html>
+
